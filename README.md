@@ -5,7 +5,7 @@ Create a simple "Hello World" API. Meaning:
 
 It should be a RESTful JSON API that listens on a port of your choice.
 
-The API containes three files
+The API contains three files
 
 config.js Configuration file containing running ports and environment names for staging and production
 index.js  Application Entry file
