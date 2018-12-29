@@ -16,7 +16,7 @@ When someone posts anything to the route /hello, you should return a welcome mes
 ## Solution
 
 The 'Not Found handler' on for any request that does not have /hello in the path\
-Resting /hello it return "Hello ! Join Pirple to Master Nodejs" which default to English.
+Requesting /hello it return "Hello ! Join Pirple to Master Nodejs" which default to English.
 You can add lang query parameter (eg. /hell?lang=sw) for another language.\
 You can add name query parameter to get you name added to the response (ex. /hello?lang=sw&name=Joselee).
 
