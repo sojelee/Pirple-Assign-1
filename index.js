@@ -4,6 +4,7 @@ const url           = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
 const config        = require('./config');
 const lang          = require('./lang');
+const handlers       = require('./lib/handlers')
 
 // Instatiate the Http Sever
 const server = http.createServer((req,res)=> {
@@ -67,16 +68,6 @@ const server = http.createServer((req,res)=> {
 // Create Server Instance
 server.listen(config.port,()=>console.log(`Server is running on port ${config.port} on ${config.envName} environment`));
 
-// Defind the handler object
-let handlers = {};
-// Add hello handler function
-handlers.hello = (data,callback)=>{
-  callback(200,{'message':`${data.greet} ${data.name}! ${data.welcome}`});
-}
-// Not found hanlder
-handlers.notFound = (data,callback)=>{
-  callback(404);
-}
 
 // The request router
 const router = {
